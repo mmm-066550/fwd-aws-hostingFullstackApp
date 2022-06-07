@@ -1,9 +1,6 @@
 {
   "name": "udagram-api",
   "version": "2.0.0",
-  "engines": {
-    "node": "14.15.0"
-  },
   "main": "src/server.ts",
   "scripts": {
     "start": "node ./www/server.js",
@@ -12,7 +9,7 @@
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "deploy": "npm run build && chmod +x bin/deploy.sh && bin/deploy.sh",
-    "build": "npm install -f && npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
+    "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
