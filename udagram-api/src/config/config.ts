@@ -13,11 +13,10 @@ export const config = {
   username: `${process.env.POSTGRES_USERNAME}`,
   password: process.env.POSTGRES_PASSWORD,
   port: Number(process.env.PORT),
-  dialect: process.env.RDS_DIALECT,
-  aws_region: process.env.AWS_REGION,
+  dialect: process.env.AWS_RDS_DIALECT,
+  aws_region: process.env.AWS_DEFAULT_REGION,
   aws_profile: process.env.AWS_PROFILE,
   aws_media_bucket: process.env.AWS_BUCKET,
-  url: process.env.URL,
   jwt: {
     secret: process.env.JWT_SECRET,
   },
