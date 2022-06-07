@@ -34,12 +34,12 @@ app.get("/", async (req, res) => {
 });
 app.use("/api/v0/", IndexRouter);
 
-(async () => {
-  await sequelize.addModels(V0_FEED_MODELS);
-  await sequelize.addModels(V0_USER_MODELS);
-  await sequelize.sync();
-  console.log("Database Connected");
-})();
+// (async () => {
+// await sequelize.addModels(V0_FEED_MODELS);
+// await sequelize.addModels(V0_USER_MODELS);
+// await sequelize.sync();
+// console.log("Database Connected");
+// })();
 
 // Start the Server
 const port = process.env.PORT || 8080;
