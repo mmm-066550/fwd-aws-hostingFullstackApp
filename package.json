@@ -7,10 +7,12 @@
     "fe:install": "cd udagram-frontend && npm install -f",
     "fe:build": "cd udagram-frontend && npm run build",
     "fe:deploy": "cd udagram-frontend && npm run deploy",
+    "fe:test": "cd udagram-frontend && npm run test",
     "________________________": "__________________________________",
     "be:install": "cd udagram-api && npm install -f",
     "be:build": "cd udagram-api && npm run build",
     "be:deploy": "cd udagram-api && npm run deploy",
+    "be:test": "cd udagram-api && npm run test",
     "_____________________________": "_____________________________",
     "deploy": "npm run be:deploy && npm run fe:deploy"
   },
