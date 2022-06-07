@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node ./www/server.js",
     "tsc": "npx tsc",
-    "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
+    "dev": "npx nodemon ./src/server.ts",
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "deploy": "chmod +x bin/deploy.sh && bin/deploy.sh",

@@ -30,7 +30,3 @@ jobs:
       - run:
           name: "Deploy back end"
           command: "npm run be:deploy"
-# workflows:
-# say-hello-workflow:
-# jobs:
-# - say-hello
