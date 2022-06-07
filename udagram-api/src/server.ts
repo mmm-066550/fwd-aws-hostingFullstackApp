@@ -42,7 +42,7 @@ app.use("/api/v0/", IndexRouter);
 // })();
 
 // Start the Server
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Backend server is listening on port ${port}....`);
   console.log(`press CTRL+C to stop server`);
