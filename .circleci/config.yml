@@ -11,8 +11,14 @@ jobs:
       - checkout
       - aws-cli/setup
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: "Install front end dependencies"
+          command: "npm run fe:install"
+      - run:
+          name: "Build front end"
+          command: "npm run fe:build"
+      - run:
+          name: "Deploy front end"
+          command: "npm run fe:deploy"
 # workflows:
 # say-hello-workflow:
 # jobs:
